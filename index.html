@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smart Utility Hub - Free online GST Calculator, EMI Calculator, and Age Calculator. Fast, accurate, and mobile-friendly tools." />
+  <meta name="keywords" content="GST Calculator, EMI Calculator, Age Calculator, Online Tools, Finance Calculator" />
+  <meta name="author" content="Yuvaraja H M" />
+  <meta property="og:title" content="Smart Utility Hub" />
+  <meta property="og:description" content="Free GST, EMI, and Age Calculator tools in one place." />
+  <title>Smart Utility Hub | GST · EMI · Age Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; }
+  </style>
+</head>
+<body>
+
+<!-- ===========================
+     NAVBAR
+=========================== -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a class="nav-brand" href="#hero">
+    <span class="brand-icon">⚡</span>
+    Smart Utility Hub
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#how">How it Works</a></li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#developer">Developer</a></li>
+    <li>
+      <a href="https://digitalheroesco.com" target="_blank" rel="noopener noreferrer" class="nav-hero-btn">
+        🦸 Digital Heroes
+      </a>
+    </li>
+  </ul>
+
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ===========================
+     HERO SECTION
+=========================== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Free · Fast · Accurate Tools
+    </div>
+
+    <h1>
+      Smart<br />
+      <span>Utility Hub</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      <span>GST Calculator</span> &nbsp;|&nbsp;
+      <span>EMI Calculator</span> &nbsp;|&nbsp;
+      <span>Age Calculator</span>
+    </p>
+
+    <p class="hero-desc">
+      A free utility tool website that helps users calculate GST, loan EMI, and exact age instantly.
+      No sign-up required. Works on all devices.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#tools" class="btn-hero-main">
+        🧮 Try the Calculators
+      </a>
+      <a href="https://digitalheroesco.com" target="_blank" rel="noopener noreferrer" class="btn-digital-heroes">
+        🦸 Built for Digital Heroes
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num" data-count="3" data-suffix="">3</div>
+        <div class="stat-label">Free Tools</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-num" data-count="100" data-suffix="%">100%</div>
+        <div class="stat-label">Accurate</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-num" data-count="0" data-suffix="">0</div>
+        <div class="stat-label">Sign-up Needed</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-num" data-count="24" data-suffix="/7">24/7</div>
+        <div class="stat-label">Available</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     HOW IT WORKS
+=========================== -->
+<section class="how-section" id="how">
+  <div class="section-label">Simple Steps</div>
+  <h2 class="section-title">How It Works</h2>
+  <p class="section-desc">Each calculator is designed to give you instant, accurate results with just a few inputs.</p>
+
+  <div class="how-grid">
+    <div class="how-card">
+      <div class="how-step">1</div>
+      <h3>Pick a Tool</h3>
+      <p>Choose from GST, EMI, or Age calculator using the tabs.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-step">2</div>
+      <h3>Enter Values</h3>
+      <p>Fill in the required input fields — no account needed.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-step">3</div>
+      <h3>Get Results</h3>
+      <p>Click Calculate and see instant, formatted results.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-step">4</div>
+      <h3>Copy & Share</h3>
+      <p>Copy your results to clipboard and share anywhere.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     TOOLS SECTION
+=========================== -->
+<section class="tools-section" id="tools">
+  <div class="section-label">Free Calculators</div>
+  <h2 class="section-title">Smart Utility Tools</h2>
+  <p class="section-desc">Professional-grade calculators built for everyday financial and personal use.</p>
+
+  <!-- TABS -->
+  <div class="tools-tabs" role="tablist">
+    <button class="tab-btn active" data-target="gst-panel" role="tab" aria-selected="true">
+      🧾 GST Calculator
+    </button>
+    <button class="tab-btn" data-target="emi-panel" role="tab" aria-selected="false">
+      🏦 EMI Calculator
+    </button>
+    <button class="tab-btn" data-target="age-panel" role="tab" aria-selected="false">
+      🎂 Age Calculator
+    </button>
+  </div>
+
+  <!-- ========================
+       TOOL 1: GST CALCULATOR
+  ========================= -->
+  <div class="calc-panel active" id="gst-panel" role="tabpanel">
+    <div class="calc-card">
+      <div class="calc-card-header">
+        <div class="calc-icon icon-gst">🧾</div>
+        <div>
+          <h2>GST Calculator</h2>
+          <p>Add or remove Goods & Services Tax from any amount instantly</p>
+        </div>
+      </div>
+
+      <div class="calc-body">
+        <!-- Amount -->
+        <div class="form-group">
+          <label for="gstAmount">Enter Amount (₹)</label>
+          <div class="input-wrap has-prefix">
+            <span class="input-prefix">₹</span>
+            <input
+              type="number"
+              id="gstAmount"
+              placeholder="e.g. 10000"
+              min="0"
+              step="any"
+              aria-label="Amount in Rupees"
+            />
+          </div>
+          <div class="error-msg" id="gstAmountErr"></div>
+        </div>
+
+        <!-- GST Rate -->
+        <div class="form-group">
+          <label for="gstRate">GST Rate</label>
+          <select id="gstRate" aria-label="Select GST percentage">
+            <option value="5">5% — Essential goods</option>
+            <option value="12">12% — Standard goods</option>
+            <option value="18" selected>18% — Most services</option>
+            <option value="28">28% — Luxury goods</option>
+          </select>
+          <div class="error-msg" id="gstRateErr"></div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-group">
+          <button class="btn btn-success" onclick="calculateGST('add')">
+            ➕ Add GST
+          </button>
+          <button class="btn btn-warning" onclick="calculateGST('remove')">
+            ➖ Remove GST
+          </button>
+          <button class="btn btn-outline btn-sm" onclick="resetGST()">
+            🔄 Reset
+          </button>
+        </div>
+
+        <!-- Result -->
+        <div class="result-box" id="gstResult">
+          <div class="result-header">
+            <h3 id="gstModeLabel">📊 GST Breakdown</h3>
+            <button class="copy-btn" onclick="copyResult('gstResultBody', this)">📋 Copy</button>
+          </div>
+          <div id="gstResultBody">
+            <div class="result-grid">
+              <div class="result-item">
+                <div class="result-label">Original Amount</div>
+                <div class="result-value" id="gstOriginal">—</div>
+              </div>
+              <div class="result-item">
+                <div class="result-label">GST Percentage</div>
+                <div class="result-value" id="gstPercent">—</div>
+              </div>
+              <div class="result-item">
+                <div class="result-label">GST Amount</div>
+                <div class="result-value" id="gstAmt">—</div>
+              </div>
+              <div class="result-item">
+                <div class="result-label">Final Amount</div>
+                <div class="result-value highlight" id="gstFinal">—</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Result -->
+
+        <!-- Info Note -->
+        <p style="font-size:0.78rem;color:var(--text-muted);margin-top:1rem;line-height:1.5;">
+          💡 <strong>Add GST:</strong> Calculates tax on top of entered amount. &nbsp;
+          <strong>Remove GST:</strong> Extracts tax from a GST-inclusive price.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================
+       TOOL 2: EMI CALCULATOR
+  ========================= -->
+  <div class="calc-panel" id="emi-panel" role="tabpanel">
+    <div class="calc-card">
+      <div class="calc-card-header">
+        <div class="calc-icon icon-emi">🏦</div>
+        <div>
+          <h2>EMI Calculator</h2>
+          <p>Calculate your monthly loan instalment, total interest & total payment</p>
+        </div>
+      </div>
+
+      <div class="calc-body">
+        <!-- Loan Amount -->
+        <div class="form-group">
+          <label for="loanAmount">Loan Amount (₹)</label>
+          <div class="input-wrap has-prefix">
+            <span class="input-prefix">₹</span>
+            <input
+              type="number"
+              id="loanAmount"
+              placeholder="e.g. 500000"
+              min="1"
+              step="any"
+              aria-label="Loan Amount"
+            />
+          </div>
+          <div class="error-msg" id="loanAmountErr"></div>
+        </div>
+
+        <!-- Interest + Tenure Row -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="interestRate">Annual Interest Rate (%)</label>
+            <div class="input-wrap">
+              <input
+                type="number"
+                id="interestRate"
+                placeholder="e.g. 8.5"
+                min="0.01"
+                max="100"
+                step="0.01"
+                aria-label="Annual Interest Rate"
+              />
+            </div>
+            <div class="error-msg" id="interestRateErr"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="tenure">Loan Tenure</label>
+            <div class="input-wrap">
+              <input
+                type="number"
+                id="tenure"
+                placeholder="e.g. 24"
+                min="1"
+                step="1"
+                aria-label="Loan Tenure"
+              />
+            </div>
+            <div class="error-msg" id="tenureErr"></div>
+          </div>
+        </div>
+
+        <!-- Tenure Type -->
+        <div class="form-group">
+          <label for="tenureType">Tenure Type</label>
+          <select id="tenureType" aria-label="Tenure type">
+            <option value="months">Months</option>
+            <option value="years">Years</option>
+          </select>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="calculateEMI()">
+            🏦 Calculate EMI
+          </button>
+          <button class="btn btn-outline btn-sm" onclick="resetEMI()">
+            🔄 Reset
+          </button>
+        </div>
+
+        <!-- Result -->
+        <div class="result-box" id="emiResult">
+          <div class="result-header">
+            <h3>📊 EMI Breakdown</h3>
+            <button class="copy-btn" onclick="copyResult('emiResultBody', this)">📋 Copy</button>
+          </div>
+          <div id="emiResultBody">
+            <div class="result-grid">
+              <div class="result-item">
+                <div class="result-label">Monthly EMI</div>
+                <div class="result-value highlight" id="emiMonthly">—</div>
+              </div>
+              <div class="result-item">
+                <div class="result-label">Total Interest</div>
+                <div class="result-value" id="emiTotalInterest">—</div>
+              </div>
+              <div class="result-item">
+                <div class="result-label">Principal Amount</div>
+                <div class="result-value" id="emiPrincipal">—</div>
+              </div>
+              <div class="result-item">
+                <div class="result-label">Total Payment</div>
+                <div class="result-value" id="emiTotalPayment">—</div>
+              </div>
+            </div>
+
+            <!-- Visual Breakdown -->
+            <div class="emi-chart">
+              <div class="emi-bar-label">
+                <span>🟦 Principal</span>
+                <span id="principalPct">—</span>
+              </div>
+              <div class="emi-bar-track" style="margin-bottom:0.8rem;">
+                <div class="emi-bar-fill" id="principalBar" style="width:0%"></div>
+              </div>
+              <div class="emi-bar-label">
+                <span>🟧 Interest</span>
+                <span id="interestPct">—</span>
+              </div>
+              <div class="emi-bar-track">
+                <div class="emi-bar-fill emi-bar-fill-interest" id="interestBar" style="width:0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Result -->
+
+        <p style="font-size:0.78rem;color:var(--text-muted);margin-top:1rem;line-height:1.5;">
+          💡 Formula: <strong>EMI = [P × R × (1+R)^N] / [(1+R)^N – 1]</strong>
+          where P = Principal, R = Monthly Rate, N = Tenure in months.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================
+       TOOL 3: AGE CALCULATOR
+  ========================= -->
+  <div class="calc-panel" id="age-panel" role="tabpanel">
+    <div class="calc-card">
+      <div class="calc-card-header">
+        <div class="calc-icon icon-age">🎂</div>
+        <div>
+          <h2>Age Calculator</h2>
+          <p>Find your exact age in years, months, days and more fun stats</p>
+        </div>
+      </div>
+
+      <div class="calc-body">
+        <!-- DOB -->
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <div class="input-wrap">
+            <input
+              type="date"
+              id="dob"
+              aria-label="Date of Birth"
+            />
+          </div>
+          <div class="error-msg" id="dobErr"></div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-group">
+          <button class="btn btn-primary" style="background:linear-gradient(135deg,#10b981,#059669);box-shadow:0 4px 16px rgba(16,185,129,0.35);" onclick="calculateAge()">
+            🎂 Calculate Age
+          </button>
+          <button class="btn btn-outline btn-sm" onclick="resetAge()">
+            🔄 Reset
+          </button>
+        </div>
+
+        <!-- Result -->
+        <div class="result-box" id="ageResult">
+          <div class="result-header">
+            <h3>🎉 Your Age Details</h3>
+            <button class="copy-btn" onclick="copyResult('ageResultBody', this)">📋 Copy</button>
+          </div>
+          <div id="ageResultBody">
+            <!-- Big Age Display -->
+            <div class="age-result-big">
+              <div class="age-display">
+                <div class="age-unit">
+                  <div class="age-num" id="ageYears">0</div>
+                  <div class="age-lbl">Years</div>
+                </div>
+                <div class="age-unit">
+                  <div class="age-num" id="ageMonths">0</div>
+                  <div class="age-lbl">Months</div>
+                </div>
+                <div class="age-unit">
+                  <div class="age-num" id="ageDays">0</div>
+                  <div class="age-lbl">Days</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Extra Stats -->
+            <div class="result-grid">
+              <div class="result-item">
+                <div class="result-label">Total Days Lived</div>
+                <div class="result-value" id="ageTotalDays">—</div>
+              </div>
+              <div class="result-item">
+                <div class="result-label">Total Weeks Lived</div>
+                <div class="result-value" id="ageTotalWeeks">—</div>
+              </div>
+              <div class="result-item">
+                <div class="result-label">Total Months Lived</div>
+                <div class="result-value" id="ageTotalMonths">—</div>
+              </div>
+              <div class="result-item">
+                <div class="result-label">Born on (Day)</div>
+                <div class="result-value" id="ageBornOn">—</div>
+              </div>
+            </div>
+
+            <!-- Next Birthday -->
+            <div style="padding:1rem 1.3rem;background:rgba(16,185,129,0.06);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;">
+              <span style="font-size:0.85rem;font-weight:600;color:var(--text-muted);">🎁 Next Birthday in:</span>
+              <span style="font-size:1rem;font-weight:800;color:#10b981;" id="ageNextBday">—</span>
+            </div>
+          </div>
+        </div>
+        <!-- END Result -->
+
+        <p style="font-size:0.78rem;color:var(--text-muted);margin-top:1rem;line-height:1.5;">
+          💡 Age is calculated based on today's date. Future dates are not allowed.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- END TOOL PANELS -->
+
+</section>
+
+<!-- ===========================
+     DEVELOPER SECTION
+=========================== -->
+<section class="dev-section" id="developer">
+  <div class="section-label">Meet the Creator</div>
+  <h2 class="section-title">Developer Info</h2>
+
+  <div class="dev-card">
+    <div class="dev-avatar">👨‍💻</div>
+    <div class="dev-name">Yuvaraja H M</div>
+    <div class="dev-role">Full-Stack Developer &amp; UI Engineer</div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;margin-bottom:1.5rem;">
+      <a class="dev-email" href="mailto:yuva04461@gmail.com" style="margin-bottom:0;">
+        📧 yuva04461@gmail.com
+      </a>
+    </div>
+    <br />
+    <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:1.5rem;line-height:1.7;">
+      Built this <strong style="color:var(--text);">Smart Utility Hub</strong> as part of a developer trial task —
+      featuring real working tools, clean code, and a portfolio-quality UI.
+      Deployed and ready for production on Vercel.
+    </p>
+    <a href="https://digitalheroesco.com" target="_blank" rel="noopener noreferrer" class="dev-btn">
+      🦸 Built for Digital Heroes
+    </a>
+  </div>
+</section>
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+<footer>
+  <div class="footer-brand">⚡ Smart Utility Hub</div>
+  <p class="footer-text">
+    Built by <strong>Yuvaraja H M</strong> &nbsp;·&nbsp;
+    <a href="mailto:yuva04461@gmail.com" style="color:var(--primary-light);">yuva04461@gmail.com</a>
+  </p>
+  <p class="footer-text" style="margin-bottom:0.6rem;">
+    Powered by&nbsp;
+    <a href="https://digitalheroesco.com" target="_blank" rel="noopener noreferrer"
+       style="color:var(--accent);font-weight:700;">Digital Heroes Co.</a>
+  </p>
+  <p class="footer-copy">
+    © 2025 Smart Utility Hub. All rights reserved. &nbsp;|&nbsp;
+    Free to use. No data stored.
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
